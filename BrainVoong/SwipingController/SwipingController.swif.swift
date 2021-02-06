@@ -13,10 +13,6 @@ class SwipingController: UICollectionViewController, UICollectionViewDelegateFlo
         Page(imageName: "Grut", headerText: "Join for us!", bodyText: "If you are join for us> we are give you cookies!"),
         Page(imageName: "Dancing", headerText: "Dancing for us!", bodyText: "We are want to dancing with you!"),
         Page(imageName: "Strong", headerText: "Be angry!", bodyText: "Do not be angry? be happy!"),
-        Page(imageName: "GrutOk", headerText: "Like!", bodyText: "If you want to join us, subscribe for us and like."),
-        Page(imageName: "Grut", headerText: "Join for us!", bodyText: "If you are join for us> we are give you cookies!"),
-        Page(imageName: "Dancing", headerText: "Dancing for us!", bodyText: "We are want to dancing with you!"),
-        Page(imageName: "Strong", headerText: "Be angry!", bodyText: "Do not be angry? be happy!"),
         Page(imageName: "GrutOk", headerText: "Like!", bodyText: "If you want to join us, subscribe for us and like.")
     ]
     
@@ -54,7 +50,7 @@ class SwipingController: UICollectionViewController, UICollectionViewDelegateFlo
         collectionView?.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
     }
 
-    private lazy var pageView: UIPageControl = {
+    lazy var pageView: UIPageControl = {
         let pageView = UIPageControl()
         pageView.translatesAutoresizingMaskIntoConstraints = false
         pageView.numberOfPages = pages.count
@@ -69,9 +65,7 @@ class SwipingController: UICollectionViewController, UICollectionViewDelegateFlo
         let buttonConteinerStackView = UIStackView(arrangedSubviews: [prevButton, pageView, nextButton])
         buttonConteinerStackView.distribution = .fillEqually
         buttonConteinerStackView.translatesAutoresizingMaskIntoConstraints = false
-
-        view.addSubview(buttonConteinerStackView)
-
+            view.addSubview(buttonConteinerStackView)
         NSLayoutConstraint.activate([
             buttonConteinerStackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
             buttonConteinerStackView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
@@ -90,34 +84,6 @@ class SwipingController: UICollectionViewController, UICollectionViewDelegateFlo
         setupButtonControllers()
         collectionView.backgroundColor = .white
         collectionView.register(PageCell.self, forCellWithReuseIdentifier: "cellId")
-        
         collectionView.isPagingEnabled = true
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 0
-    }
-    
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return pages.count
-    }
-    
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath) as! PageCell
-        
-        let page = pages[indexPath.item]
-        cell.page = page
-//        cell.imageView.image = UIImage(named: page.imageName)
-//        cell.descriptionTextView.text = page.headerText
-        
-//        let imageName = imageNames[indexPath.item]
-//        cell.imageView.image = UIImage(named: imageName)
-//        cell.descriptionTextView.text = headerStrings[indexPath.item]
-//        cell.backgroundColor = indexPath.item % 2 == 0 ? .red : .green
-        return cell
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width, height: view.frame.height)
     }
 }
