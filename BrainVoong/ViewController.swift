@@ -61,8 +61,6 @@ class ViewController: UIViewController {
 
 
     fileprivate func setupButtonControllers() {
-
-
         let buttonConteinerStackView = UIStackView(arrangedSubviews: [prevButton, pageView, nextButton])
         buttonConteinerStackView.distribution = .fillEqually
         buttonConteinerStackView.translatesAutoresizingMaskIntoConstraints = false
