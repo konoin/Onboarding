@@ -8,3 +8,8 @@ The code in this application is written using the UIKit framework, without the u
 
 ## Code
 When working, the storyboard was not used. Everything is written using code.
+![SceneDelegate](https://github.com/konoin/Onboarding/blob/main/Image/SceneDelegate.jpg)
+![Code](https://github.com/konoin/Onboarding/blob/main/Image/Code.jpg)
+![PageCell](https://github.com/konoin/Onboarding/blob/main/Image/PageCell.jpg)
+
+## Screenshots
