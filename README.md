@@ -9,7 +9,7 @@ The code in this application is written using the UIKit framework, without the u
 ## Code
 When working, the storyboard was not used. Everything is written using code.
 
-<img scr="https://github.com/konoin/Onboarding/blob/main/Image/SceneDelegate.jpg" width="100">
+<img scr="https://github.com/konoin/Onboarding/blob/main/Image/SceneDelegate.jpg" height="100">
 <img scr="https://github.com/konoin/Onboarding/blob/main/Image/Code.jpg" width="200">
 <img scr="https://github.com/konoin/Onboarding/blob/main/Image/PageCell.jpg" width="200">
 
