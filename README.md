@@ -14,6 +14,9 @@ When working, the storyboard was not used. Everything is written using code.
 
 ## Screenshots
 Screenshots of the app itself.
+
+
+
 ![596](https://github.com/konoin/Onboarding/blob/main/Image/Screen/IMG_0596.PNG)
 ![597](https://github.com/konoin/Onboarding/blob/main/Image/Screen/IMG_0597.PNG)
 ![598](https://github.com/konoin/Onboarding/blob/main/Image/Screen/IMG_0598.PNG)
