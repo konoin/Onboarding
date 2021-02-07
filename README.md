@@ -1,6 +1,10 @@
-# BrianVoongLesson
-iOS Study Project
+Onboarding
+============
 
-## This application has been repeat for Brian Voong.
+This part of the application is written based on the lessons of Brian Wong, [link to youtube channel](https://www.youtube.com/channel/UCuP2vJ6kRutQBfRmdcI92mA).
 
-### On this application I practice for programmaticaly write the UI-elements.
+##Notices
+The code in this application is written using the UIKit framework, without the use of third-party libraries.
+
+##Code
+When working, the storyboard was not used. Everything is written using code.
