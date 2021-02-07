@@ -18,7 +18,7 @@ Screenshots of the app itself.
 
 
 ![596](https://github.com/konoin/Onboarding/blob/main/Image/Screen/IMG_0596.PNG) {width=50%}
-![597](https://github.com/konoin/Onboarding/blob/main/Image/Screen/IMG_0597.PNG)
+<img src="https://github.com/konoin/Onboarding/blob/main/Image/Screen/IMG_0596.PNG" width="48">
 ![598](https://github.com/konoin/Onboarding/blob/main/Image/Screen/IMG_0598.PNG)
 ![599](https://github.com/konoin/Onboarding/blob/main/Image/Screen/IMG_0599.PNG)
 ![600](https://github.com/konoin/Onboarding/blob/main/Image/Screen/IMG_0600.PNG)
